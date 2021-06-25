@@ -20,6 +20,7 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('jar', views.post_jar),
     path('jars', views.get_jars),
     path('withdraw', views.withdraw),
