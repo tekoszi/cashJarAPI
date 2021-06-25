@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 import sqlite3
 
 import json
+import os
 import requests
 from myapp.models import Jar,Transaction
 from datetime import datetime
