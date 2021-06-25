@@ -11,7 +11,7 @@ from datetime import datetime
 
 
 def index(request):
-    with open(os.path.abspath(os.path.dirname(__name__))+r'\readme.md') as mdfile:
+    with open(os.path.abspath(os.path.dirname(__name__))+r'/readme.md') as mdfile:
         content = mdfile.read()
     return HttpResponse(content, content_type='text/json')
 
