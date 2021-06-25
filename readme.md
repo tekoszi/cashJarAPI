@@ -1,6 +1,7 @@
 # This is a JAR REST API
-I have build a postman collection which enables you to verify all the queries, it is available here: https://www.getpostman.com/collections/69285dd8953213fdca1d <br>
+I have build a postman collection which enables you to verify all the queries, it is available here: https://www.getpostman.com/collections/c1fa7d9a0fb694afc87d <br>
 Api is available at https://herokuapp.com <br>
+# You can create and run local docker container for this application by running docker-compose up
 ### Avaiable Endpoints:<br>
 # /jar<br>
 Enables to add new jar
@@ -80,29 +81,6 @@ POST with body:
 ```json
 {"id": 1,
 "cash": 2
-}
-```
-
-example responses: <br>
-```json
-{
-    'There is no jar with that id''
-}
-```
-```json
-{
-    'Select same currency jar'
-}
-```
-
-# /cashin<br>
-Enables to cash in, using jar id, cash, currency
-#### Available queries:<br>
-POST with body:
-```json
-{"id": 1,
-"cash": 4,
-"currency": "PLN"
 }
 ```
 
@@ -273,4 +251,3 @@ POST with body:
 }
 ```
 ###NOTE Only same currency jars can take place in transfer <br>
-# You can create and run docker container for this application by running docker-compose up

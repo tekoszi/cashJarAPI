@@ -8,6 +8,12 @@ import requests
 from myapp.models import Jar,Transaction
 from datetime import datetime
 
+
+def index(request):
+    with open(os.path.abspath(os.path.dirname(__name__))+r'\readme.md') as mdfile:
+        content = mdfile.read()
+    return HttpResponse(content, content_type='text/json')
+
 @csrf_exempt
 def post_jar(request):
     if request.method == "POST":
